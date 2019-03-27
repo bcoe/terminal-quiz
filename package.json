@@ -1,6 +1,6 @@
 {
   "name": "terminal-quiz",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "quiz a user based on choices in a choices.txt file",
   "main": "index.js",
   "bin": "./index.js",
