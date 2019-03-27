@@ -6,7 +6,8 @@
   "bin": "./index.js",
   "scripts": {
     "test": "nyc mocha test/test.js",
-    "posttest": "standard"
+    "posttest": "standard",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
