@@ -8,7 +8,7 @@ const inquirer = require('inquirer')
 const userHome = require('user-home')
 
 require('yargs')
-  .command('* <choices> <answer>', 'run the quiz described in choices.txt', (yargs) => {
+  .command('* [choices] [answer]', 'run the quiz described in choices.txt', (yargs) => {
     yargs
       .positional('choices', {
         describe: 'where should we read the quiz file from?',
