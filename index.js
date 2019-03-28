@@ -30,6 +30,7 @@ require('yargs')
 
       const answer = await runQuiz(choicesText.split('\n'))
       writeFileSync(argv.answer, answer.selection)
+      if (argv.exitMessage) console.info(argv.exitMessage)
     } catch (err) {
       if (err.code === 'ENOENT') {
         console.error(`could not find ${argv.choices}`)
@@ -37,6 +38,9 @@ require('yargs')
         throw err
       }
     }
+  })
+  .option('exit-message', {
+    describe: 'optional message to output when exiting'
   })
   .parse()
 
